@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello',function () {
-   echo 123;
+Route::get('hello', function () {
+    echo 123;
+});
+
+Route::get('master', function () {
+    echo 'master';
 });
