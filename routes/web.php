@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', function () {
-    echo 123;
-});
+/**
+ * 冒泡排序
+ */
+Route::get('bubble_sort','SortController@bubble');
 
-Route::get('master', function () {
-    echo 'master';
-});
+/**
+ * 快速排序
+ */
+Route::get('quick_sort','SortController@quick');
