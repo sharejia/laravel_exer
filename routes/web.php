@@ -24,3 +24,4 @@ Route::get('bubble_sort','SortController@bubble');
  * 快速排序
  */
 Route::get('quick_sort','SortController@quick');
+

@@ -22,3 +22,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('collection', 'TestController@test');
+
+/**
+ * 获取工单列表
+ */
+Route::any('getCases','Cases\CaseController@lists');
